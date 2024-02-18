@@ -1,0 +1,58 @@
+:root {
+    --news-primary: #023047;
+    --news-light: #ffffff;
+}
+
+body {
+    background-color: var(--news-primary);
+
+    & h1 {
+        text-align: center;
+        padding: 1rem;
+        color: var(--news-light);
+        font-size: 50px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    & .container {
+        background-color: var(--news-light);
+        min-width: 768px;
+
+        & nav {
+            padding: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+    & .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        min-width: 768px;
+
+
+        & .card {
+            background-color: var(--news-light);
+            padding: 4rem;
+        }
+
+    }
+
+}
