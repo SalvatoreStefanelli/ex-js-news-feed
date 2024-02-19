@@ -37,3 +37,38 @@ const news = [
 ]
 
 console.log(news);
+
+
+const card = [
+    './asset/img/rubber-duck.jpg',
+    './asset/img/kitchen-food.jpg',
+    './asset/img/deep-sea.jpg',
+    './asset/img/modern-art.jpg'
+]
+
+let activeCard = 0;
+
+const sliderImagesEl = document.querySelector('.card .images')
+const prevEl = document.querySelector('.prev')
+const nextEl = document.querySelector('.next')
+
+const cardDomElement = document.querySelector('.card')
+console.log(cardDomElement);
+
+for (let i = 0; i < news.length; i++) {
+    const item = news[i];
+
+    console.log(item.title);
+    console.log(item.content);
+    console.log(item.author);
+
+    const markup = `
+             < div class="card" >
+                 <div class="title">${item.title}</div>
+                 <h4>pubblicato da ${item.author}</h4>
+                 <h5>in data ${item.published}</h5>
+                 <p>${item.content}</p>
+                 <div class="images"></div>
+            </div>`
+}
+

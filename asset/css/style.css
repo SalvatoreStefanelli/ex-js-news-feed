@@ -46,6 +46,7 @@ main {
         justify-content: center;
         margin-top: 2rem;
         min-width: 768px;
+        flex-wrap: wrap;
 
 
         & .card {
